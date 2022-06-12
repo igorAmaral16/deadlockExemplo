@@ -33,7 +33,7 @@ public class Deadlock {
 			Thread t2 = new Thread() {
 				public void run() {
 					synchronized (recurso2) {	
-						System.out.println("Thread 2: bloqueou o " + recurso1);
+						System.out.println("Thread 2: bloqueou o " + recurso2);
 						
 						try {
 							Thread.sleep(100);
